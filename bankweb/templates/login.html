@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <center>
+<!--<form action="loginpage" method="post">-->
+<!--    {% csrf_token %}-->
+<!--    <input type="text" name="username" placeholder="enter username"><br>-->
+<!--    <input type="password" name="password" placeholder="enter Password"><br>-->
+<!--    <input type="submit">-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+<!--{% include 'footer.html' %}-->
+
+        <form action="loginpage" method="post" class="dropdown-menu p-4">
+                {% csrf_token %}
+          <div class="form-group">
+            <label for="exampleD">User Name</label><br>
+            <input type="text" class="form-control" id="exampleD" placeholder="enter username">
+          </div>
+          <div class="form-group">
+            <label for="exampleDropdownFormPassword2">Password</label><br>
+            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="enter Password">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+            <label class="form-check-label" for="dropdownCheck2">
+              Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      {% include 'footer.html' %}
+      </center>
+</body>
+</html>
+<!--{% include 'footer.html' %}-->
